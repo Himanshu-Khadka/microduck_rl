@@ -1,0 +1,198 @@
+{
+  "status": "first mechanical fit study; incomplete robot redesign; no training performed",
+  "source_repository": "https://github.com/Himanshu-Khadka/microduck_rl",
+  "upstream": "https://github.com/pollen-robotics/microduck_rl",
+  "source_commit": "bae39f5900b318f7e87fc485c30a31213cfa14eb",
+  "units": "STEP/STL/3MF in mm; GLB in metres per glTF convention",
+  "scale": 1.6,
+  "scale_status": "provisional fit-study choice, not a confirmed final robot scale",
+  "clearance_per_side_mm": 0.4,
+  "housing_dimensions_mm": [
+    45.4000001,
+    24.8000002,
+    35.300000100000005
+  ],
+  "servo_complete_bounds_mm": [
+    [
+      -22.71998671891554,
+      -12.419986718915542,
+      -21.03979630281882
+    ],
+    [
+      22.700000100000008,
+      12.41998671891554,
+      21.118508203173203
+    ]
+  ],
+  "servo_axis_STEP": {
+    "point_mm": [
+      12.5,
+      0,
+      18.7
+    ],
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "datum": "outer horn face; joint-plane placement assumption"
+  },
+  "horn_hole_centres_STEP_mm": [
+    [
+      7.55,
+      -4.95,
+      18.7
+    ],
+    [
+      7.55,
+      4.95,
+      18.7
+    ],
+    [
+      17.45,
+      -4.95,
+      18.7
+    ],
+    [
+      17.45,
+      4.95,
+      18.7
+    ]
+  ],
+  "horn_hole_radius_STEP_mm": 1.26365,
+  "joint_positions_in_upper_leg_frame_mm": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      35.2,
+      57.243359999999996,
+      -6.4
+    ]
+  ],
+  "servo_STEP_to_upper_leg_matrices": [
+    [
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        12.5
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        18.7
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        1.0,
+        0.0,
+        0.0,
+        22.700000000000003
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        57.243359999999996
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        12.299999999999999
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "housing_AABB_gap_y_mm": 9.643359999999994,
+  "cut_pocket_dimensions_mm": [
+    46.199999999999996,
+    25.6
+  ],
+  "original_scaled_volume_mm3": 16997.03233789583,
+  "candidate_volume_mm3": 12580.732081924112,
+  "candidate_watertight": true,
+  "candidate_components": 1,
+  "housing_intersections": [
+    {
+      "motor": "hip_pitch",
+      "housing_overlap_before_mm3": 25.406998604233053,
+      "housing_overlap_after_mm3": 0.0,
+      "pocket_overlap_after_mm3": 7.579122514774402e-14
+    },
+    {
+      "motor": "knee",
+      "housing_overlap_before_mm3": 0.0,
+      "housing_overlap_after_mm3": 0.0,
+      "pocket_overlap_after_mm3": -1.1842378929335002e-15
+    }
+  ],
+  "jetson_complete_bounds_mm": [
+    [
+      -5.500000100000001,
+      -18.876875,
+      -4.900021523391387
+    ],
+    [
+      97.5000001,
+      72.0000001,
+      29.866000100000004
+    ]
+  ],
+  "jetson_dimensions_mm": [
+    103.00000019999999,
+    90.87687509999999,
+    34.76602162339139
+  ],
+  "jetson_solid_count": 1393,
+  "sources": {
+    "servo-motor_sts3215-v10.step": {
+      "sha256": "418869e1533cd6b4dc6e6f234e2fbf9fb7777415cca8e685f226109b7dbde594",
+      "bytes": 1905411
+    },
+    "P3766-P3768SKU4-P3767ENVELOPE.stp": {
+      "sha256": "02dafef626d5ac6ee029d1ead431d6096c27c7c51fef6b49d5189e1765fb9d2f",
+      "bytes": 74004141
+    },
+    "robot_allcollisions.xml": {
+      "sha256": "ec9d2f731596cfc847a7fc3898ef8b5e67a548928abc23216537f1da8af2729c",
+      "bytes": 43020
+    },
+    "upper_leg_left.stl": {
+      "sha256": "8cb1c12dfa6d366a318bb1ec16f585427b9a185afeb7738d0a6f41f5db46a07d",
+      "bytes": 612584
+    }
+  },
+  "unresolved": [
+    "motor case retention",
+    "horn attachment and opposite support",
+    "hip/yaw/roll neighbouring link clearances",
+    "cable and plug insertion/bend space",
+    "Jetson/battery/controller torso packaging",
+    "minimum wall and strength analysis",
+    "joint-range sweep and all-robot collisions",
+    "measured masses, inertias, servo dynamics, COM and retraining"
+  ]
+}
